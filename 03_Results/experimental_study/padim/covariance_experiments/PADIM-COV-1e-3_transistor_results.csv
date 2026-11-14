@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-COV-1e-3,transistor,100,0.001,0.8847926267281107,0.9674959882015113,0.4745762711864407,0.8193663895070544,0.3111111111111111,1.0,16.830711364746094,2.205819606781006

@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-EP-100,bottle,100 epochs (longer training),0.8424242424242425,0.804897241572598,0.7083333333333334,0.9443803443302681,0.9444444444444444,0.5666666666666667,244.1684832572937,2.9399280548095703,0.08691415843254174

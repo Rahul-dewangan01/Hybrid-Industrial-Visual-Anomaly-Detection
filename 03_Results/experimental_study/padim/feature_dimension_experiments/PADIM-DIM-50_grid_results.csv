@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-DIM-50,grid,50,0.01,0.7540322580645161,0.7768179227684018,0.8857142857142857,0.9126603092056874,0.7948717948717948,1.0,4.427693605422974,1.7234656810760498

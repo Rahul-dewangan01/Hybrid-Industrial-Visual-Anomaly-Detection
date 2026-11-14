@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-LR-1e4,bottle,Adam lr=1e-4 (conservative),0.5212121212121212,0.47007660356151904,0.42105263157894735,0.8198723974235094,1.0,0.26666666666666666,118.51379561424255,2.8623533248901367,0.15318353001173812

@@ -1,0 +1,70 @@
+{
+  "start_time": "2026-11-13T21:39:59.956834",
+  "device": "cuda",
+  "target_categories": [
+    "bottle",
+    "cable",
+    "capsule",
+    "carpet",
+    "grid",
+    "hazelnut",
+    "leather",
+    "metal_nut",
+    "screw",
+    "tile",
+    "toothbrush",
+    "transistor"
+  ],
+  "category_results": {
+    "bottle": {
+      "status": "SUCCESS",
+      "duration_seconds": 204.890628
+    },
+    "cable": {
+      "status": "SUCCESS",
+      "duration_seconds": 437.538879
+    },
+    "capsule": {
+      "status": "SUCCESS",
+      "duration_seconds": 313.595319
+    },
+    "carpet": {
+      "status": "SUCCESS",
+      "duration_seconds": 369.529953
+    },
+    "grid": {
+      "status": "SUCCESS",
+      "duration_seconds": 352.36514
+    },
+    "hazelnut": {
+      "status": "SUCCESS",
+      "duration_seconds": 424.813762
+    },
+    "leather": {
+      "status": "SUCCESS",
+      "duration_seconds": 373.846502
+    },
+    "metal_nut": {
+      "status": "SUCCESS",
+      "duration_seconds": 272.901882
+    },
+    "screw": {
+      "status": "SUCCESS",
+      "duration_seconds": 322.148751
+    },
+    "tile": {
+      "status": "SUCCESS",
+      "duration_seconds": 307.944416
+    },
+    "toothbrush": {
+      "status": "SKIPPED_ALREADY_COMPLETED",
+      "duration_seconds": 0
+    },
+    "transistor": {
+      "status": "SUCCESS",
+      "duration_seconds": 284.483018
+    }
+  },
+  "end_time": "2026-11-13T22:41:04.016911",
+  "total_duration_seconds": 3664.060077
+}

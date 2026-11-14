@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-SLSQP,grid,SLSQP,0.9918745275888133,0.8266129032258065,0.12121212121212122,1,8,0.05216240882873535,True,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002

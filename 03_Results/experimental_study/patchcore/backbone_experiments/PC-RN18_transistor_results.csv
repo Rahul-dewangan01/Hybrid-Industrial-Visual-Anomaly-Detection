@@ -1,0 +1,2 @@
+experiment_id,category,backbone,coreset_pct,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PC-RN18,transistor,resnet18,0.05,1.0,0.9662021601614748,0.5,0.9999999999999998,0.3333333333333333,1.0,5.396009206771851,1.3473541736602783

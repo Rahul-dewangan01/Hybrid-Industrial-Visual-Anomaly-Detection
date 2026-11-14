@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-COV-1e-3,hazelnut,100,0.001,0.8828828828828829,0.9709638008792906,0.7789473684210526,0.908298211527431,0.6379310344827587,1.0,17.365078449249268,2.8243730068206787

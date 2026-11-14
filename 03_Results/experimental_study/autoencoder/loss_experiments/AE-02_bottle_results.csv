@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-02,bottle,MAE-only reconstruction loss,0.7363636363636363,0.7716543851097327,0.6956521739130435,0.9089217440368641,1.0,0.5333333333333333,122.60521030426025,2.911142110824585,0.13695974410107534

@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-ARCH-5L,bottle,5-level encoder/decoder (deeper),0.9333333333333333,0.7436984806048303,0.8888888888888888,0.9799383866625245,1.0,0.8,125.56312727928162,3.005263090133667,0.18529596071652144

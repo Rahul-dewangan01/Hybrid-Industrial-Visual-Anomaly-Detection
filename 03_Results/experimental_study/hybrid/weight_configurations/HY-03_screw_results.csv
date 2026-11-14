@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-03,screw,"{'dip': 0.1, 'ae': 0.1, 'patchcore': 0.4, 'padim': 0.4}",0.9230225988700564,0.651685393258427,0.9577844444478208,0.9666666666666667,0.4915254237288136,1.4691785259192103,0.006107807159423828

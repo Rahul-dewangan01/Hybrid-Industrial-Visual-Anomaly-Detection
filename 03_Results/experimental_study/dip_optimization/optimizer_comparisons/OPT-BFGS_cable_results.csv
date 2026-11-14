@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-BFGS,cable,L-BFGS-B,0.9732142857142858,0.657563025210084,0.0,0,8,0.046938419342041016,True,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002

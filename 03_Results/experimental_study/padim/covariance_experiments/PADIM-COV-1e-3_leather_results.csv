@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-COV-1e-3,leather,100,0.001,1.0,0.9926717990814148,0.8495575221238938,0.9999999999999999,0.7384615384615385,1.0,18.297739505767822,3.138364553451538

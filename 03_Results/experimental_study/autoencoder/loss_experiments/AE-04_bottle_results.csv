@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-04,bottle,MSE + SSIM combined loss (CURRENT PRODUCTION BASELINE),0.793939393939394,0.7874164910046142,0.6666666666666666,0.9248436151660573,1.0,0.5,117.14266443252563,2.9293646812438965,0.1268342956317784

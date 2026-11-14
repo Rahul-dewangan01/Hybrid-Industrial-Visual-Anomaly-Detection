@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-02,leather,"{'dip': 0.15, 'ae': 0.25, 'patchcore': 0.3, 'padim': 0.3}",1.0,0.9896907216494846,0.9999999999999999,0.9795918367346939,1.0,1.2074505512476996,0.0067119598388671875

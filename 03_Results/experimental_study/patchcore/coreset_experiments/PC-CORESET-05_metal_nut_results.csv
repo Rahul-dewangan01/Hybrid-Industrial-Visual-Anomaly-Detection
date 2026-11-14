@@ -1,0 +1,2 @@
+experiment_id,category,backbone,coreset_pct,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PC-CORESET-05,metal_nut,resnet18,0.05,1.0,0.9422076831943823,0.9245283018867925,1.0,0.8596491228070176,1.0,4.929058313369751,0.956505537033081

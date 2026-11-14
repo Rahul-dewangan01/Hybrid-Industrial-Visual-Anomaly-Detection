@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-01,bottle,"{'dip': 0.25, 'ae': 0.25, 'patchcore': 0.25, 'padim': 0.25}",1.0,1.0,0.9999999999999999,1.0,1.0,1.030780292637817,0.008456945419311523

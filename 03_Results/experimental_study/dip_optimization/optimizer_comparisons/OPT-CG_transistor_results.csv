@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-CG,transistor,CG,0.9909122085048011,0.6682027649769586,0.13333333333333333,0,8,0.0440213680267334,True,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002

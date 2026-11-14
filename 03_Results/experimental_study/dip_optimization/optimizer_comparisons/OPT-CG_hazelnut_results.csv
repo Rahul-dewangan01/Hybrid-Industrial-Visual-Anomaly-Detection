@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-CG,hazelnut,CG,0.978863163371488,0.5341055341055341,0.10256410256410256,0,8,0.04885601997375488,True,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002,0.14285714285700002

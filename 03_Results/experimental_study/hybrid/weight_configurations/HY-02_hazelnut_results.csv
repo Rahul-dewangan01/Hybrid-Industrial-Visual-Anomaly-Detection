@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-02,hazelnut,"{'dip': 0.15, 'ae': 0.25, 'patchcore': 0.3, 'padim': 0.3}",1.0,0.9866666666666667,1.0,0.9736842105263158,1.0,1.2272674758355857,0.006901741027832031

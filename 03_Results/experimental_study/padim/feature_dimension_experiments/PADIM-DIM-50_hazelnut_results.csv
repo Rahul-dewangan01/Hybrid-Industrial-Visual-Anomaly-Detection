@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-DIM-50,hazelnut,50,0.01,0.8841698841698842,0.9630884910706734,0.7956989247311828,0.900423383089213,0.6607142857142857,1.0,5.360534429550171,3.0825037956237793

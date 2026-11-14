@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-DIM-50,metal_nut,50,0.01,0.8489795918367347,0.9218047383966045,0.9158878504672897,0.962129897349307,0.8448275862068966,1.0,3.6783525943756104,2.6747629642486572

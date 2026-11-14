@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-TRUST,transistor,trust-constr,0.9909122085048011,0.6682027649769586,0.13333333333333333,14,80,0.4750254154205322,True,0.14285714285700574,0.14285714285699952,0.14285714285700066,0.14285714285699866,0.14285714285699844,0.14285714285699833,0.14285714285699916

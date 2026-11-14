@@ -1,0 +1,148 @@
+# ==============================================================================
+# .gitignore — Industrial Anomaly Detection Project
+# Digital Image Processing, Optimization, and Computer Networks
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python Bytecode & Runtime Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# 2. Testing, Coverage & Profiling
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+
+# ------------------------------------------------------------------------------
+# 3. Virtual Environments
+# ------------------------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ------------------------------------------------------------------------------
+# 4. Jupyter Notebook Caches
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*-checkpoint.ipynb
+
+# ------------------------------------------------------------------------------
+# 5. IDEs, Editors & Workspace Settings
+# ------------------------------------------------------------------------------
+.vscode/
+!.vscode/settings.json.example
+!.vscode/tasks.json.example
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------------------------
+# 6. Operating System Specific Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
+
+# ------------------------------------------------------------------------------
+# 7. Microsoft Office Temporary & Lock Files
+# (Prevents git tracking temporary lock files when Word/PowerPoint/Excel are open)
+# ------------------------------------------------------------------------------
+~$*.docx
+~$*.pptx
+~$*.xlsx
+*.tmp
+*.temp
+
+# ------------------------------------------------------------------------------
+# 8. Raw Datasets & Large Archives
+# The MVTec AD dataset is ~2.1 GB across 2,755 high-resolution images.
+# Committing raw image files directly to Git exceeds GitHub repository quotas.
+# ------------------------------------------------------------------------------
+01_Dataset/MVTec_AD/
+01_Dataset/*.tar
+01_Dataset/*.tar.gz
+01_Dataset/*.tar.xz
+01_Dataset/*.zip
+01_Dataset/*.7z
+01_Dataset/*.rar
+
+# Keep the directory structure
+!01_Dataset/.gitkeep
+
+# Ignore any raw archive downloads in the root or subfolders
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+*.rar
+
+# ------------------------------------------------------------------------------
+# 9. Logs & Intermediate Scratch Files
+# ------------------------------------------------------------------------------
+*.log
+scratch/
+tmp/
+temp/
+user_master_prompt.txt

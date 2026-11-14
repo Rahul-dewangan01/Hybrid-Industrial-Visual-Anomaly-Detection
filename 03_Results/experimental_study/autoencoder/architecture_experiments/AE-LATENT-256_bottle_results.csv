@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-LATENT-256,bottle,Latent dim = 256 (larger bottleneck),0.7636363636363637,0.7888630418039604,0.6363636363636364,0.9135340832624447,1.0,0.4666666666666667,124.5675892829895,2.99751877784729,0.1417711774343269

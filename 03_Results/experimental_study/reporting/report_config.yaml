@@ -1,0 +1,104 @@
+# Automated Experiment Reporting & Dashboard Configuration
+# Industrial Anomaly Detection Research Study
+
+project:
+  title: "Industrial Anomaly Detection Using Digital Image Processing, Optimization, and Deep Learning"
+  version: "2.0"
+  dataset: "MVTec AD"
+  date: "November 2026"
+  hardware: "NVIDIA GeForce RTX 4060 Laptop GPU (8GB VRAM), Intel Core i7"
+  environment: "PyTorch 2.5.1+cu121, CUDA 12.1, Python 3.11"
+
+paths:
+  master_csv: "03_Results/experimental_study/master_experiment_results.csv"
+  study_root: "03_Results/experimental_study"
+  overall_analysis: "03_Results/experimental_study/overall_analysis"
+  overall_charts: "03_Results/experimental_study/overall_analysis/charts"
+  overall_tables: "03_Results/experimental_study/overall_analysis/tables"
+  handoff_dir: "07_AI_HANDOFF"
+
+categories:
+  valid:
+    - bottle
+    - cable
+    - capsule
+    - carpet
+    - grid
+    - hazelnut
+    - leather
+    - metal_nut
+    - screw
+    - tile
+    - toothbrush
+    - transistor
+  skipped:
+    - pill
+    - wood
+    - zipper
+
+models:
+  autoencoder:
+    display_name: "Convolutional Autoencoder"
+    dir_name: "autoencoder"
+    color: "#2b5c8f"
+    families: ["loss_experiments", "architecture_experiments", "hyperparameter_experiments"]
+  patchcore:
+    display_name: "PatchCore"
+    dir_name: "patchcore"
+    color: "#2a9d8f"
+    families: ["coreset_experiments", "backbone_experiments"]
+  padim:
+    display_name: "PaDiM"
+    dir_name: "padim"
+    color: "#e76f51"
+    families: ["feature_dimension_experiments", "covariance_experiments"]
+  dip_optimization:
+    display_name: "DIP Optimization (scipy.optimize)"
+    dir_name: "dip_optimization"
+    color: "#f4a261"
+    families: ["optimizer_comparisons"]
+  hybrid_fusion:
+    display_name: "Hybrid Ensemble Fusion"
+    dir_name: "hybrid"
+    color: "#7209b7"
+    families: ["weight_configurations"]
+
+metrics:
+  image_auroc:
+    name: "Image-Level AUROC"
+    unit: ""
+    range: [0.0, 1.0]
+    higher_is_better: true
+  pixel_auroc:
+    name: "Pixel-Level AUROC (Localization)"
+    unit: ""
+    range: [0.0, 1.0]
+    higher_is_better: true
+  f1_score:
+    name: "F1-Score"
+    unit: ""
+    range: [0.0, 1.0]
+    higher_is_better: true
+  average_precision:
+    name: "Average Precision (PR-AUC)"
+    unit: ""
+    range: [0.0, 1.0]
+    higher_is_better: true
+  training_time_s:
+    name: "Training / Fit Time"
+    unit: "s"
+    higher_is_better: false
+  inference_time_s:
+    name: "Inference Time"
+    unit: "s"
+    higher_is_better: false
+
+visualization:
+  dpi: 300
+  style: "seaborn-v0_8-whitegrid"
+  palette: "deep"
+  figure_size:
+    single: [8, 5]
+    double: [14, 6]
+    heatmap: [12, 8]
+    dashboard_summary: [16, 9]

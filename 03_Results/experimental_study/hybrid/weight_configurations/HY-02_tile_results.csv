@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-02,tile,"{'dip': 0.15, 'ae': 0.25, 'patchcore': 0.3, 'padim': 0.3}",0.963455149501661,0.8717948717948718,0.9884040473231968,0.9714285714285714,0.7906976744186046,1.2477469282099825,0.0071887969970703125

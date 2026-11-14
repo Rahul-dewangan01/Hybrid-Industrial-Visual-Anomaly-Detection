@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-02,toothbrush,"{'dip': 0.15, 'ae': 0.25, 'patchcore': 0.3, 'padim': 0.3}",0.9821428571428572,0.9333333333333333,0.9924172794117647,1.0,0.875,1.1649939609189583,0.0065801143646240234

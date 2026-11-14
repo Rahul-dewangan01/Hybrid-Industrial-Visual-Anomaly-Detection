@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-COV-1e-2,capsule,100,0.01,0.8906882591093117,0.98386173715235,0.9421487603305785,0.961468433423661,0.890625,1.0,18.081311225891113,3.32830548286438

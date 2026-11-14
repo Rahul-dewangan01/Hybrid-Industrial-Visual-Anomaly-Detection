@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-ARCH-4L,bottle,4-level encoder/decoder (CURRENT BASELINE),0.793939393939394,0.7874164910046142,0.6666666666666666,0.9248436151660573,1.0,0.5,120.6049382686615,2.871150016784668,0.1268342956317784

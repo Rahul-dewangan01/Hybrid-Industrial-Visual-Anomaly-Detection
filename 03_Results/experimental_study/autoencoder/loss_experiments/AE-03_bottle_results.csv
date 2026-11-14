@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-03,bottle,SSIM-only structural loss,0.5727272727272728,0.40139829769585605,0.43902439024390244,0.8280671202360017,0.8181818181818182,0.3,119.33162546157837,2.9483394622802734,0.3526412924973964

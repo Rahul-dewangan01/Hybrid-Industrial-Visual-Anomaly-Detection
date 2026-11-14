@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-01,bottle,MSE-only reconstruction loss (baseline ablation),0.8333333333333333,0.7508842350583739,0.7083333333333334,0.9396415747851858,0.9444444444444444,0.5666666666666667,0.0,2.5734949111938477,0.1272315126693928

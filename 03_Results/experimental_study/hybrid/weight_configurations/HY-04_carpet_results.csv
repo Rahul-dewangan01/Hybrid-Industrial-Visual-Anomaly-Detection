@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-04,carpet,"{'dip': 0.2, 'ae': 0.1, 'patchcore': 0.35, 'padim': 0.35}",0.9918478260869565,0.967032967032967,0.9973961229104117,0.9777777777777777,0.9565217391304348,1.03909092341192,0.00707697868347168

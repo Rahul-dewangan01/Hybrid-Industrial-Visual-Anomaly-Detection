@@ -1,0 +1,2 @@
+experiment_id,category,n_components,cov_regularization,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,fit_time_s,inference_time_s
+PADIM-DIM-50,toothbrush,50,0.01,0.9464285714285714,0.9811662324770787,0.8205128205128205,0.977594376566416,0.6956521739130435,1.0,1.3675875663757324,1.1896743774414062

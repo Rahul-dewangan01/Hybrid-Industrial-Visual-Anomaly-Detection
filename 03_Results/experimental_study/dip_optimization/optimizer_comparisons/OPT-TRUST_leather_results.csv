@@ -1,0 +1,2 @@
+experiment_id,category,optimizer,synthetic_auroc,test_auroc,test_f1,n_iterations,n_fev,optimization_time_s,success,pixel_difference,ssim,color_difference,edge_difference,texture_difference,frequency_difference,defect_area
+OPT-TRUST,leather,trust-constr,0.977897041169409,0.30759803921568624,0.7254901960784313,14,80,0.5073223114013672,True,0.14285714285700574,0.14285714285699952,0.14285714285700066,0.14285714285699866,0.14285714285699844,0.14285714285699833,0.14285714285699916

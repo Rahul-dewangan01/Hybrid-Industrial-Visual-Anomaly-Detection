@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-01,metal_nut,"{'dip': 0.25, 'ae': 0.25, 'patchcore': 0.25, 'padim': 0.25}",0.9408163265306122,0.8735632183908046,0.9884974475181639,1.0,0.7755102040816326,1.3161589364085573,0.006478548049926758

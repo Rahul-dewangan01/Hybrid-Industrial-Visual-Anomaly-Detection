@@ -1,0 +1,24 @@
+image_id,category,image_path,anomaly_score,predicted_label,true_label,correct
+001.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\001.png,0.035674857537869,0,1,0
+003.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\003.png,0.6712708007025843,0,1,0
+005.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\005.png,0.4280919282390857,0,1,0
+006.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\006.png,-0.003028726512494598,0,1,0
+007.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\007.png,-0.3903094835953939,0,1,0
+008.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\008.png,0.9960390552122906,0,1,0
+010.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\010.png,3.416237238920187,1,1,1
+011.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\011.png,0.8211542311210703,0,1,0
+012.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\012.png,1.1158461590188604,1,1,1
+013.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\013.png,0.4284521863108582,0,1,0
+015.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\015.png,1.9818032140629342,1,1,1
+019.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\019.png,0.9489974191103986,0,1,0
+021.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\021.png,0.6150170286978166,0,1,0
+024.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\024.png,1.4597622276047695,1,1,1
+026.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\026.png,1.655195347739196,1,1,1
+029.png,defective,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\defective\029.png,2.4271182712075756,1,1,1
+000.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\000.png,0.22250476043361234,0,0,1
+001.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\001.png,-0.05790008793519763,0,0,1
+007.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\007.png,0.23499597524223786,0,0,1
+008.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\008.png,0.7243211838271291,0,0,1
+009.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\009.png,1.0324959028815412,0,0,1
+010.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\010.png,0.9136391083239477,0,0,1
+011.png,good,E:\COLLEGE STUFFS\Subjects\3rd Year\sem 5\digital image processing\project\01_Dataset\MVTec_AD\toothbrush\test\good\011.png,1.4850517851477338,1,0,0

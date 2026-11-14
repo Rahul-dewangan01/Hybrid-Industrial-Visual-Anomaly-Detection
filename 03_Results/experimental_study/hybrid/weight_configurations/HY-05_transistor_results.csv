@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-05,transistor,"{'dip': 0.1, 'ae': 0.3, 'patchcore': 0.3, 'padim': 0.3}",0.9608294930875576,0.72,0.9084975656929437,0.8181818181818182,0.6428571428571429,1.3164331271980856,0.00629115104675293

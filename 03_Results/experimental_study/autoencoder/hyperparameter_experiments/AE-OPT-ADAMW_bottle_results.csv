@@ -1,0 +1,2 @@
+experiment_id,category,description,image_auroc,pixel_auroc,f1_score,average_precision,precision,recall,training_time_s,inference_time_s,threshold
+AE-OPT-ADAMW,bottle,AdamW optimizer (weight decay regularization),0.803030303030303,0.8051819619566107,0.723404255319149,0.9303569683536028,1.0,0.5666666666666667,122.29085540771484,2.9806642532348633,0.1432800974942911

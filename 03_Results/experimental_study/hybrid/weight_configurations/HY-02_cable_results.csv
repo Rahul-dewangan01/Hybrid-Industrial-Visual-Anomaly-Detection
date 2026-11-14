@@ -1,0 +1,2 @@
+experiment_id,category,weights,image_auroc,f1_score,average_precision,precision,recall,threshold,eval_time_s
+HY-02,cable,"{'dip': 0.15, 'ae': 0.25, 'patchcore': 0.3, 'padim': 0.3}",0.9369747899159664,0.8045977011494253,0.9694245077745451,0.9722222222222222,0.6862745098039216,1.3350522300640884,0.006299018859863281
