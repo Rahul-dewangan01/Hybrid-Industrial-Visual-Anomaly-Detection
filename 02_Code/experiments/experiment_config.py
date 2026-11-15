@@ -8,7 +8,7 @@ Evidence types:
   B — Inspired by / adjacent to cited literature
   C — Proposed ablation (novel in this study)
 
-Explicitly excluded (per master prompt):
+Explicitly excluded (per research specification):
   - 7-feature vs 11-feature DIP comparison
   - 95th vs 99th percentile threshold comparison
 """

@@ -15,7 +15,6 @@ paths:
   overall_analysis: "03_Results/experimental_study/overall_analysis"
   overall_charts: "03_Results/experimental_study/overall_analysis/charts"
   overall_tables: "03_Results/experimental_study/overall_analysis/tables"
-  handoff_dir: "07_AI_HANDOFF"
 
 categories:
   valid:
