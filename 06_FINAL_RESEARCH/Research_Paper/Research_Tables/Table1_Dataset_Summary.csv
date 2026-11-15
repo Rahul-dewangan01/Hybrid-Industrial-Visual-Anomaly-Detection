@@ -1,0 +1,14 @@
+Category,Type,Train_Normal,Test_Normal,Test_Defective,Total_Test,Defect_Types,GT_Masks
+bottle,Object,104,11,30,41,"broken_large, broken_small, contamination",Yes
+cable,Object,112,28,51,79,"bent_wire, cable_swap, combined, cut_inner, cut_outer, missing_cable, missing_wire, poke",Yes
+capsule,Object,109,13,57,70,"crack, faulty_imprint, poke, scratch, squeeze",Yes
+carpet,Texture,124,16,46,62,"color, cut, hole, metal_contamination, thread",Yes
+grid,Texture,126,8,31,39,"bent, broken, glue, metal_contamination, thread",Yes
+hazelnut,Object,124,21,37,58,"crack, cut, hole, print",Yes
+leather,Texture,119,17,48,65,"color, cut, fold, glue, poke",Yes
+metal_nut,Object,111,10,49,59,"bent, color, flip, scratch",Yes
+screw,Object,127,24,59,83,"manipulated_front, scratch_head, scratch_neck, thread_side, thread_top",Yes
+tile,Texture,117,14,43,57,"crack, glue_strip, gray_stroke, oil, rough",Yes
+toothbrush,Object,28,7,16,23,defective,Yes
+transistor,Object,108,31,14,45,"bent_lead, cut_lead, damaged_case, misplaced",Yes
+Total / Overall,12 Categories,1389,200,479,679,65 Unique Defect Subtypes,100% Annotated

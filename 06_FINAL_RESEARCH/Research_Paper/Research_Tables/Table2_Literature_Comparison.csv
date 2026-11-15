@@ -1,0 +1,10 @@
+Author_and_Year,Methodology,Dataset,Performance,Critical_Results_Remarks
+Bergmann et al. (2019),"MVTec AD Benchmark, VAE, AnoGAN, SSIM-AE",MVTec AD (15 classes),0.63 - 0.73 AUROC,Pioneered unsupervised industrial benchmark; demonstrated baseline generative methods fail on structural defects.
+Bergmann et al. (2019b),SSIM Autoencoders,MVTec AD & synthetic,0.7300 Image AUROC,"Replaced MSE loss with SSIM, overcoming blurry reconstructions. Directly motivated our AE-04 experiment."
+Defard et al. (2021),PaDiM (Patch Distribution Modeling),MVTec AD (15 classes),0.9810 Image AUROC / 0.9218 Pixel AUROC,Localized patch-level multivariate Gaussian density estimation with Mahalanobis scoring.
+Roth et al. (2022),PatchCore (Coreset Memory Bank),MVTec AD (15 classes),0.9990 Image AUROC / 0.9810 Pixel AUROC,Greedy k-center coreset subsampling of neighborhood-aggregated patch embeddings.
+Deng & Li (2022),Reverse Distillation,MVTec AD (15 classes),0.9810 Image AUROC / 0.9720 Pixel AUROC,Teacher-student inverted bottleneck distillation prevents anomaly reconstruction.
+Zavrtanik et al. (2021),DRAEM (Reconstruction Embedding),MVTec AD (15 classes),0.9800 Image AUROC / 0.9730 Pixel AUROC,Discriminative sub-network comparing corrupted and restored synthetic surfaces.
+Yu et al. (2021),FastFlow (2D Normalizing Flows),MVTec AD (15 classes),0.9940 Image AUROC / 0.9750 Pixel AUROC,Invertible flows for 2D density transformation avoiding explicit covariance inversion.
+Batzner et al. (2024),EfficientAD (PDN Distillation),MVTec AD (15 classes),0.9950 Image AUROC (<2ms latency),Real-time patch description networks. Directly motivates our computer networks latency analysis.
+This Study (2026),"Multi-Paradigm: DIP + Opt + DL (AE, PatchCore, PaDiM) + Hybrid Fusion + Networks","MVTec AD (12 classes, 736 runs)",0.9769 PC / 0.9626 HY / 0.9082 PaDiM / 0.6149 AE,Comprehensive ablation; disproved synthetic DIP optimization transfer; identified compression denoising benefits.

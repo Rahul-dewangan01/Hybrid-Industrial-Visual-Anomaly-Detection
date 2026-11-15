@@ -1,0 +1,11 @@
+Experiment_ID,Ablation_Type,Configuration,Image_AUROC,Pixel_AUROC,F1_Score,Training_Time_s
+AE-ARCH-3L,Architecture Depth,3-level encoder/decoder,0.6242,0.7053,0.4615,113.7
+AE-ARCH-4L,Architecture Depth,4-level baseline encoder/decoder,0.7939,0.7874,0.6667,120.6
+AE-ARCH-5L,Architecture Depth,5-level deeper encoder/decoder,0.9333,0.7437,0.8889,125.6
+AE-LATENT-64,Bottleneck Capacity,latent_dim = 64 (narrower),0.8636,0.7548,0.75,120.8
+AE-LATENT-128,Bottleneck Capacity,latent_dim = 128 (baseline),0.7939,0.7874,0.6667,120.6
+AE-LATENT-256,Bottleneck Capacity,latent_dim = 256 (wider),0.7636,0.7889,0.6364,124.6
+AE-EP-20,Training Epochs,epochs = 20,0.8636,0.7666,0.75,48.2
+AE-EP-100,Training Epochs,epochs = 100,0.8424,0.8049,0.7083,244.2
+AE-LR-1e4,Learning Rate,lr = 1e-4,0.5212,0.4701,0.4211,118.5
+AE-OPT-ADAMW,Optimizer,AdamW with decoupled weight decay,0.803,0.8052,0.7234,122.3
