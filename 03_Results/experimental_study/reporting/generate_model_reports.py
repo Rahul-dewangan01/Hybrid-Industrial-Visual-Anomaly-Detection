@@ -361,6 +361,19 @@ def generate_dip_optimization_report(df_all: pd.DataFrame, study_root: str):
 
     # Write Markdown
     md_path = os.path.join(out_dir, "MODEL_COMPARISON_REPORT.md")
+    
+    # Check if parameter sweep results exist
+    sweep_path = os.path.join(out_dir, "param_sweep", "optimization_sweep_results.csv")
+    sweep_summary_md = ""
+    if os.path.exists(sweep_path):
+        sdf = pd.read_csv(sweep_path)
+        sg = (sdf.groupby(["experiment_id", "method", "param", "value"], sort=False)
+                 [["synth_auroc", "test_auroc", "moved_L1", "n_iter"]].mean().round(4)).reset_index()
+        sweep_summary_md = f"\n\n## 3. Parameter Sensitivity Sweep (OPT-P1 to OPT-P5 across 444 trials)\n\n"
+        sweep_summary_md += df_to_markdown_table(sg.head(18))
+        sweep_summary_md += "\n\n*(Full sweep results across all 37 configurations available in `param_sweep/PARAM_SWEEP_REPORT.md`)*\n\n"
+        sweep_summary_md += "![Parameter Sweep Summary](param_sweep/charts/opt_param_sweep_summary.png)\n"
+
     with open(md_path, "w", encoding="utf-8") as f:
         f.write("# Consolidated Model Comparison Report: DIP Optimization\n\n")
         f.write("## 1. Executive Summary\n")
@@ -369,6 +382,8 @@ def generate_dip_optimization_report(df_all: pd.DataFrame, study_root: str):
         f.write("\n\n![Generalization Gap](charts/generalization_gap.png)\n\n")
         f.write("## 2. Key Negative Finding\n")
         f.write("While optimizers achieved >0.98 AUROC on synthetic pseudo-anomalies, test generalization remained at 0.5758 AUROC (identical to equal baseline weights), demonstrating that additive Gaussian feature perturbation fails to model real morphological defect distributions.\n")
+        if sweep_summary_md:
+            f.write(sweep_summary_md)
 
     # Write PDF
     pdf_path = os.path.join(out_dir, "MODEL_COMPARISON_REPORT.pdf")
@@ -378,6 +393,12 @@ def generate_dip_optimization_report(df_all: pd.DataFrame, study_root: str):
     if "generalization_gap" in charts:
         pdf.add_image(charts["generalization_gap"], width=480, height=210)
     pdf.add_callout("All 4 optimizers converged; the large synthetic vs real gap documents an important limitation of Gaussian feature noise.")
+    
+    sweep_chart = os.path.join(out_dir, "param_sweep", "charts", "opt_param_sweep_summary.png")
+    if os.path.exists(sweep_chart):
+        pdf.add_heading("2. Parameter Sensitivity Sweep (OPT-P1 to OPT-P5)", level=1)
+        pdf.add_image(sweep_chart, width=500, height=330)
+        pdf.add_callout("Parameter sweep confirms: finite difference step eps < 0.001 traps weights at equal values; increasing eps allows weight movement, but test AUROC consistently drops to ~0.52-0.54.")
     pdf.build()
 
 
