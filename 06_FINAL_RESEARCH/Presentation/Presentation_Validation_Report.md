@@ -1,120 +1,115 @@
-# Presentation Scientific Validation and Quality Audit Report
+# Academic Presentation Quality Audit & Scientific Validation Report
 
 **Project Title:** Industrial Anomaly Detection Using Digital Image Processing, Optimization, and Computer Networks  
-**Deliverables Evaluated:**
-- `Final_Research_Presentation.pptx` (Widescreen 16:9, Editable PPTX)
-- `Final_Research_Presentation.pdf` (High-Fidelity PDF via PowerPoint COM Engine)
-- `Presentation_Speaker_Notes.docx` (Structured Spoken Script, Technical Arguments & Viva Defense Guide)
-- `PPT_Figures/` (10 High-Resolution Vector/Raster Visuals & Architecture Panels)
+**Institution:** Indian Institute of Information Technology Raichur (IIIT Raichur)  
+**Academic Year:** 2026  
+**Team Members:**
+1. Omkar Kendre — Roll No. AD24B1033
+2. Rahul Dewangan — Roll No. AD24B1050
+3. Govind Das — Roll No. AD24B1021
 
-**Author:** Rahul Dewangan  
-**Target Duration:** 10–12 Minutes (12 Slides Exactly)  
+**Deliverables Audited:**
+- `Final_Research_Presentation.pptx` (Widescreen 16:9 Editable Deck)
+- `Final_Research_Presentation.pdf` (High-Fidelity PDF Export via PowerPoint COM Engine)
+- `Presentation_Speaker_Notes.docx` (Structured Spoken Script, Technical Arguments & Viva Defense Guide)
+- `PPT_Figures/` (12 High-Resolution Visuals, Architecture Flowcharts, Heatmap Panels, and Benchmark Charts)
+
 **Date of Audit:** November 17, 2026  
-**Audit Status:** FULLY VERIFIED & COMPLIANT WITH ZERO DISCREPANCIES ✅  
+**Audit Status:** 100% COMPLIANT & FULLY VERIFIED ✅  
 
 ---
 
-## 1. Structural & Layout Compliance Audit
+## 1. Compliance with Strict Academic Constraints
 
-| Requirement | Target Specification | Delivered State | Audit Result |
+| Audit Criterion | Prescribed Requirement | Delivered Verification | Status |
 |---|---|---|---|
-| **Slide Count** | Exactly 12 Slides Total | **12 Slides Exactly** | **PASSED ✅** |
-| **Slide 1 Identity** | Title Slide | **Title, Team, Supervisor, Institution, Year, Platform Specs** | **PASSED ✅** |
-| **Slide 12 Identity** | Conclusion & Thank You Slide | **Key Takeaways, Industrial Guidelines, Future Scope, Thank You / Q&A** | **PASSED ✅** |
-| **Aspect Ratio** | Widescreen 16:9 | **13.333 in × 7.500 in (Widescreen 16:9)** | **PASSED ✅** |
-| **Format Availability** | PPTX (Editable) + PDF (Fixed Layout) | **Both Generated & Fully Synchronized** | **PASSED ✅** |
-| **Speaker Notes** | Present for All 12 Slides | **Embedded in PPTX + Standalone DOCX Formatted** | **PASSED ✅** |
-| **Excluded Experiments** | Exclude 7 vs 11 Features & 95th vs 99th Percentile | **100% Excluded from Slides & Notes** | **PASSED ✅** |
-| **Evaluated Categories** | 12 MVTec AD Categories Documented | **12 Evaluated; Pill, Wood, Zipper Disclosed as Omitted** | **PASSED ✅** |
+| **Slide Count** | Exactly 12 Slides Total | **12 Slides Exactly (Verified via COM & PDF Byte Stream)** | **PASSED ✅** |
+| **Academic Sequence** | Intro $\to$ Literature $\to$ Hypothesis $\to$ Prove $\to$ Method $\to$ Results $\to$ Concl. | **Strictly followed across Slides 1 to 12** | **PASSED ✅** |
+| **Course Roles: DIP** | Image processing, feature extraction, ConvAE, PatchCore, PaDiM, Hybrid fusion | **All Deep Learning categorized under DIP; visible on Slides 6, 7, 10, 11** | **PASSED ✅** |
+| **Course Roles: ACOMA** | Feature-weight optimization, numerical solvers, constraints, 444 parameter sweeps | **Visible on Slides 8 and 10; labeled as ACOMA** | **PASSED ✅** |
+| **Course Roles: Networks** | Compression (PNG/JPEG), size reduction, transmission latency, edge denoising | **Visible on Slides 9 and 11; labeled as COMPUTER NETWORKS (Simulated)** | **PASSED ✅** |
+| **Course Badges** | Professional course identifiers on technical slides | **Visible small badges: `[DIP]`, `[ACOMA]`, `[COMPUTER NETWORKS]`** | **PASSED ✅** |
+| **Literature Restriction** | **ONLY research papers published in 2021 or later (2021–2026)** | **5 papers verified: Defard 2021, Roth 2022, Zavrtanik 2021, Deng 2022, Batzner 2024. ZERO pre-2021 papers.** | **PASSED ✅** |
+| **Supervisor Restriction** | **NO supervisor section, NO guide name** | **Zero supervisor sections or mentions in PPTX, PDF, or DOCX** | **PASSED ✅** |
+| **Department Restriction** | **NO CSE department tags or labels** | **Zero CSE department tags; pure IIIT Raichur institutional branding** | **PASSED ✅** |
+| **Team Members** | Exactly Omkar Kendre, Rahul Dewangan, Govind Das | **Names & Roll Numbers verified across Slides 1, 12, DOCX, and Report** | **PASSED ✅** |
+| **Excluded Experiments** | Exclude 7 vs 11 features & 95th vs 99th percentile | **100% Excluded from all slides, speaker notes, and reports** | **PASSED ✅** |
 
 ---
 
 ## 2. Quantitative Results Traceability Matrix
 
-Every single metric displayed on each slide has been audited and mapped directly to its underlying raw experiment file in the repository. No values were approximated or fabricated.
+Every numerical value displayed on the presentation slides and discussed in the speaker notes has been verified against the underlying raw experiment CSV files in the project repository.
 
-| Slide # | Slide Subject | Displayed Metric / Finding | Exact Value in Presentation | Source CSV File in Repository | Verified Value in Source File | Verification Status |
-|---|---|---|---|---|---|---|
-| **Slide 3** | Dataset Scope | Nominal Training Images | **1,389 images** | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table1_Dataset_Summary.csv` | `1389` | **VERIFIED MATCH ✅** |
-| **Slide 3** | Dataset Scope | Test Normal / Defective Split | **200 normal / 479 defective (679 total)** | `Table1_Dataset_Summary.csv` | `200 normal, 479 defective, 679 total` | **VERIFIED MATCH ✅** |
-| **Slide 3** | Dataset Scope | Physical Defect Phenotypes | **65 unique subtypes** | `Table1_Dataset_Summary.csv` | `65 Unique Defect Subtypes` | **VERIFIED MATCH ✅** |
-| **Slide 4** | DIP Baselines | Equal-Weighting Baseline AUROC | **0.5758 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.575776` | **VERIFIED MATCH ✅** |
-| **Slide 4** | DIP Baselines | Multivariate Mahalanobis AUROC | **0.5927 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.592713` | **VERIFIED MATCH ✅** |
-| **Slide 4** | DIP Baselines | One-Class SVM AUROC | **0.5781 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.578132` | **VERIFIED MATCH ✅** |
-| **Slide 4** | DIP Baselines | Isolation Forest AUROC | **0.5313 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.531320` | **VERIFIED MATCH ✅** |
-| **Slide 6** | Experimental Scope | Total Validated Experimental Runs | **736 executed runs** | `06_FINAL_RESEARCH/Research_Paper/RESULTS_TRACEABILITY_TABLE.csv` | `736 total runs (292 base + 444 sweep)` | **VERIFIED MATCH ✅** |
-| **Slide 6** | Experimental Scope | Baseline & Ablation Runs | **292 runs** | `RESULTS_TRACEABILITY_TABLE.csv` | `292 runs across 12 categories` | **VERIFIED MATCH ✅** |
-| **Slide 6** | Experimental Scope | Optimization Parameter Sweeps | **444 runs** | `03_Results/experimental_study/optimization/` | `444 sweep trials (OPT-P1 to OPT-P5)` | **VERIFIED MATCH ✅** |
-| **Slide 7** | DIP Optimization | Synthetic Noise AUROC | **>0.9900 Synthetic AUROC** | `03_Results/experimental_study/optimization/` | `>0.990 (All 4 Solvers)` | **VERIFIED MATCH ✅** |
-| **Slide 7** | DIP Optimization | Real Test Defect AUROC (Negative Result) | **0.5758 Real AUROC (0% Gain)** | `03_Results/all_categories_master_leaderboard.csv` | `0.575776 (Identical to Equal-7)` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PatchCore Image AUROC | **0.9769 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.976883` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PatchCore Pixel AUROC | **0.9721 Pixel AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.972149` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PatchCore F1-Score & Latency | **0.8221 F1 / 85.0 ms** | `03_Results/all_categories_master_leaderboard.csv` | `0.822108 / 85.0 ms` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PaDiM Image AUROC | **0.9082 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.908208` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PaDiM Pixel AUROC | **0.9619 Pixel AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.961948` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | PaDiM F1-Score & Latency | **0.8203 F1 / 95.0 ms** | `03_Results/all_categories_master_leaderboard.csv` | `0.820340 / 95.0 ms` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | ConvAE Image AUROC | **0.6149 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.614926` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | ConvAE Pixel AUROC & Latency | **0.7220 Pixel AUROC / 18.0 ms** | `03_Results/all_categories_master_leaderboard.csv` | `0.721990 / 18.0 ms (~55 FPS)` | **VERIFIED MATCH ✅** |
-| **Slide 8** | Deep Learning | ConvAE Bottle Image AUROC (5-Level) | **0.9333 Image AUROC** | `03_Results/experimental_study/autoencoder/results.csv` | `0.933333` | **VERIFIED MATCH ✅** |
-| **Slide 9** | Hybrid Fusion | Hybrid-Weighted (HY-03) AUROC | **0.9626 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.962588` | **VERIFIED MATCH ✅** |
-| **Slide 9** | Hybrid Fusion | Hybrid-Mean (HY-01) AUROC | **0.9586 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.958615` | **VERIFIED MATCH ✅** |
-| **Slide 9** | Hybrid Fusion | Hybrid-Max (HY-02) AUROC | **0.9421 Macro AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.942079` | **VERIFIED MATCH ✅** |
-| **Slide 9** | Hybrid Fusion | HY-03 Weight Allocation | **0.20 AE + 0.40 PC + 0.40 PaDiM** | `02_Code/experiments/run_hybrid_fusion.py` | `weights = [0.2, 0.4, 0.4]` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | Original PNG Latency & AUROC | **157.8 ms / 0.7515 AUROC** | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table13_Network_Compression_Analysis.csv` | `157.8 ms / 0.751515` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | JPEG Q95 Latency & AUROC | **98.4 ms / 0.7788 AUROC** | `Table13_Network_Compression_Analysis.csv` | `98.4 ms / 0.778788` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | JPEG Q75 Latency & AUROC | **89.9 ms / 0.7970 AUROC** | `Table13_Network_Compression_Analysis.csv` | `89.9 ms / 0.796969` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | JPEG Q75 Latency Reduction | **43.0% drop (89.9 ms vs 157.8 ms)** | `Table13_Network_Compression_Analysis.csv` | `(157.8 - 89.9) / 157.8 = 43.03%` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | JPEG Q75 "Denoising" Gain | **+4.55% AUROC improvement** | `Table13_Network_Compression_Analysis.csv` | `0.796969 - 0.751515 = +0.045454` | **VERIFIED MATCH ✅** |
-| **Slide 11** | Network Feasibility | JPEG Q50 Latency & AUROC | **86.7 ms / 0.7455 AUROC** | `Table13_Network_Compression_Analysis.csv` | `86.7 ms / 0.745455 (Degraded)` | **VERIFIED MATCH ✅** |
+| Slide # | Slide Subject | Displayed Metric / Value | Raw CSV Source File in Repository | Verified CSV Value | Audit Status |
+|---|---|---|---|---|---|
+| **Slide 6** | Dataset Scope | **1,389 Normal Train Images** | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table1_Dataset_Summary.csv` | `1389` | **MATCH ✅** |
+| **Slide 6** | Dataset Scope | **679 Test Images (200 N / 479 D)** | `Table1_Dataset_Summary.csv` | `200 normal, 479 defective (679)` | **MATCH ✅** |
+| **Slide 6** | Dataset Scope | **65 Physical Defect Subtypes** | `Table1_Dataset_Summary.csv` | `65 Unique Defect Subtypes` | **MATCH ✅** |
+| **Slide 6** | DIP Baselines | **Equal-7 Baseline: 0.5758 AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.575776` | **MATCH ✅** |
+| **Slide 6** | DIP Baselines | **Mahalanobis: 0.5927 AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.592713` | **MATCH ✅** |
+| **Slide 6** | DIP Baselines | **One-Class SVM: 0.5781 AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.578132` | **MATCH ✅** |
+| **Slide 8** | ACOMA Sweeps | **444 Parameter Sweep Trials** | `03_Results/experimental_study/optimization/` | `444 sweep trials (OPT-P1 to P5)` | **MATCH ✅** |
+| **Slide 10** | ACOMA Discovery | **Synthetic Noise: >0.9900 AUROC** | `03_Results/experimental_study/optimization/` | `>0.990 (All 4 Solvers)` | **MATCH ✅** |
+| **Slide 10** | ACOMA Discovery | **Real Test Defects: 0.5758 AUROC** | `03_Results/all_categories_master_leaderboard.csv` | `0.575776 (0.00% Transfer Gain)` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PatchCore Image AUROC: 0.9769** | `03_Results/all_categories_master_leaderboard.csv` | `0.976883` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PatchCore Pixel AUROC: 0.9721** | `03_Results/all_categories_master_leaderboard.csv` | `0.972149` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PatchCore F1 / Latency: 0.8221 / 85 ms** | `03_Results/all_categories_master_leaderboard.csv` | `0.822108 / 85.0 ms` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PaDiM Image AUROC: 0.9082** | `03_Results/all_categories_master_leaderboard.csv` | `0.908208` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PaDiM Pixel AUROC: 0.9619** | `03_Results/all_categories_master_leaderboard.csv` | `0.961948` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **PaDiM F1 / Latency: 0.8203 / 95 ms** | `03_Results/all_categories_master_leaderboard.csv` | `0.820340 / 95.0 ms` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **ConvAE Macro AUROC: 0.6149** | `03_Results/all_categories_master_leaderboard.csv` | `0.614926` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **ConvAE Latency: 18.0 ms (~55 FPS)** | `03_Results/all_categories_master_leaderboard.csv` | `18.0 ms` | **MATCH ✅** |
+| **Slide 10** | DIP Deep Learning | **ConvAE Bottle AUROC (5L): 0.9333** | `03_Results/experimental_study/autoencoder/results.csv` | `0.933333` | **MATCH ✅** |
+| **Slide 10** | DIP Hybrid | **HY-01 Mean AUROC: 0.9586** | `03_Results/all_categories_master_leaderboard.csv` | `0.958615` | **MATCH ✅** |
+| **Slide 10** | DIP Hybrid | **HY-02 Max AUROC: 0.9421** | `03_Results/all_categories_master_leaderboard.csv` | `0.942079` | **MATCH ✅** |
+| **Slide 10** | DIP Hybrid | **HY-03 Weighted AUROC: 0.9626** | `03_Results/all_categories_master_leaderboard.csv` | `0.962588` | **MATCH ✅** |
+| **Slide 10** | DIP Hybrid | **HY-03 Recall: 1.0000 (100%)** | `03_Results/all_categories_master_leaderboard.csv` | `1.0000 across all 12 categories` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **Original PNG: 88.8 KB / 157.8 ms** | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table13_Network_Compression_Analysis.csv` | `88.8 KB / 157.8 ms` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **Original PNG AUROC: 0.7515** | `Table13_Network_Compression_Analysis.csv` | `0.751515` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **JPEG Q95: 18.8 KB / 98.4 ms** | `Table13_Network_Compression_Analysis.csv` | `18.8 KB / 98.4 ms / 0.7788 AUROC` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **JPEG Q75: 7.9 KB / 89.9 ms** | `Table13_Network_Compression_Analysis.csv` | `7.9 KB / 89.9 ms / 0.7970 AUROC` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **JPEG Q75 Latency Reduction: 43.0%** | `Table13_Network_Compression_Analysis.csv` | `(157.8 - 89.9) / 157.8 = 43.03%` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **JPEG Q75 Denoising Gain: +4.55%** | `Table13_Network_Compression_Analysis.csv` | `0.796969 - 0.751515 = +0.045454` | **MATCH ✅** |
+| **Slide 11** | Networks (Simulated) | **JPEG Q50 AUROC Drop: 0.7455** | `Table13_Network_Compression_Analysis.csv` | `0.745455 (Degraded by artifacts)` | **MATCH ✅** |
 
 ---
 
-## 3. Visual & Aesthetic Quality Verification
+## 3. Literature Survey Compliance (2021–2026 Restriction)
 
-1. **Card Container Architecture:**
-   - Every slide uses unified cards with white backgrounds (`#FFFFFF`), subtle slate borders (`#E2E8F0`), and soft padding, set against a calm background (`#F8FAFC`).
-   - Title slide utilizes high-impact dark slate/navy styling (`#0F172A`) with vibrant accent highlights.
-
-2. **Typography Hierarchy:**
-   - Slide Titles: 22–30 pt bold sans-serif.
-   - Section Tracker / Subtitle: 10–14 pt bold in Accent Blue / Teal.
-   - Section Subheadings: 10–11 pt bold.
-   - Body Text: 9.5–10.5 pt regular with generous paragraph spacing.
-   - Key Metrics & Callouts: 10.5–12 pt bold.
-   - Zero text truncation or overlapping boxes across all 12 slides.
-
-3. **Graphic & Chart Readability:**
-   - All 10 figures in `PPT_Figures/` were exported at 250–300 DPI resolution.
-   - Fonts within charts use readable labels with distinct categorical color coding.
-   - Slide 10 qualitative localization composite displays high-contrast visual comparisons with clear column titles: *Input Image → Ground Truth Mask → Autoencoder Error → PatchCore Heatmap → PaDiM Heatmap*.
+The literature survey on **Slide 3** strictly obeys the prompt constraint:
+- **Included Papers (All 2021–2026):**
+  1. *Defard et al., ICPR 2021* (PaDiM) — 2021
+  2. *Roth et al., CVPR 2022* (PatchCore) — 2022
+  3. *Zavrtanik et al., ICCV 2021* (DRAEM) — 2021
+  4. *Deng & Li, CVPR 2022* (Reverse Distillation) — 2022
+  5. *Batzner et al., WACV 2024* (EfficientAD) — 2024
+- **Excluded Papers (Pre-2021):**
+  - *Bergmann et al., CVPR 2019 (MVTec AD)* — 2019 (Excluded from Literature Survey table)
+  - *Bergmann et al., DAGM GCPR 2019 (SSIM Autoencoders)* — 2019 (Excluded from Literature Survey table)
 
 ---
 
-## 4. Repository Location Index for Supplementary Results
+## 4. Hypothesis Evaluation Summary
 
-For evaluators seeking granular data or raw code execution logs beyond the 12 slides:
-
-| Granular Experimental Result | Repository Storage Location | Description |
-|---|---|---|
-| Complete 12-Category AUROC Matrix | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table11_Category_AUROC_Matrix.csv` | Full 12 × 11 grid of AUROC values for all models across all categories. |
-| Complete 12-Category F1-Score Matrix | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table12_Category_F1_Matrix.csv` | Complete F1-score matrix across all categories and models. |
-| Autoencoder Loss Ablation Runs | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table4_Autoencoder_Loss_Ablation.csv` | 6 loss functions: MSE, MAE, SSIM, MSE+SSIM, MSE+Sobel, MSE+SSIM+Sobel. |
-| Autoencoder Architecture Depth Ablation | `06_FINAL_RESEARCH/Research_Paper/Research_Tables/Table5_Autoencoder_Architecture_Ablation.csv` | 3-level, 4-level, and 5-level depth sweeps and bottleneck dimension sweeps. |
-| Optimization Parameter Sweeps (444 Runs) | `03_Results/experimental_study/optimization/` | Detailed logs, CSV files, and convergence curves for OPT-P1 through OPT-P5. |
-| Category-Wise Execution Logs | `03_Results/<category>/<category>_experiment.log` | Detailed runtime logs for each of the 12 individual category pipelines. |
-| Full 15-Page Academic Paper | `06_FINAL_RESEARCH/Research_Paper/Industrial_Anomaly_Detection_Paper.pdf` | Comprehensive academic paper adhering to IEEE conference / journal formatting. |
-| Full Supplementary Results Archive | `06_FINAL_RESEARCH/Research_Paper/Supplementary_Results.pdf` | 3-page supplementary document containing extended tables and hardware analysis. |
+| Hypothesis | Description | Experimental Evaluation | Outcome |
+|---|---|---|---|
+| **H1 (DIP)** | Deep learning models detect unseen defects under normal-only training. | Evaluated ConvAE, PatchCore, and PaDiM across 12 MVTec AD categories (1,389 train, 679 test). | **FULLY SUPPORTED ✅** (PatchCore: 0.9769 Image AUROC, 0.9721 Pixel AUROC). |
+| **H2 (ACOMA)** | Optimization tunes feature weights to improve defect separation over equal weights. | Executed 444 parameter sweep runs across 4 mathematical solvers on 12 categories. | **REFUTED ❌ (Critical Negative Result)** (Optimizers achieve >0.99 on synthetic noise but 0.5758 on real defects—identically 0.00% gain). |
+| **H3 (Hybrid)** | Score ensembling provides performance improvements and stability over standalone models. | Evaluated Mean, Max, and Weighted fusion (HY-03: 0.2 AE + 0.4 PC + 0.4 PaDiM). | **SUPPORTED ✅** (HY-03 achieves 0.9626 AUROC and 100% recall across all 12 categories). |
+| **H4 (Networks)** | Image compression slashes latency, with compression quality impacting detection. | Simulated PNG, JPEG Q95, Q75, Q50 over 10 Mbps edge link (50 ms RTT). | **FULLY SUPPORTED ✅** (JPEG Q75 cuts latency by 43.0% and improves AUROC by +4.55% via denoising). |
 
 ---
 
-## 5. Final Certification
+## 5. Certification
 
-I hereby certify that the presentation `Final_Research_Presentation.pptx`, the exported document `Final_Research_Presentation.pdf`, and the accompanying speaker manual `Presentation_Speaker_Notes.docx`:
-1. Form an exact **12-slide presentation** from title to conclusion.
-2. Rely exclusively on **verifiable experimental evidence from 736 executed runs**.
-3. Accurately report our **negative result** regarding synthetic DIP optimization without concealment.
-4. Contain **zero fabricated data, simulated real-world claims, or unperformed comparisons**.
-5. Are fully ready for formal B.Tech capstone project viva evaluation.
+I hereby certify that the presentation `Final_Research_Presentation.pptx`, `Final_Research_Presentation.pdf`, and the accompanying manual `Presentation_Speaker_Notes.docx`:
+1. Form an exact **12-slide presentation** adhering strictly to the required academic sequence.
+2. Carry visible, professional course tags: `[DIP]`, `[ACOMA]`, and `[COMPUTER NETWORKS]`.
+3. Include **ONLY 2021–2026 papers** in the literature survey.
+4. Feature **zero supervisor sections, zero guide names, and zero CSE department tags**.
+5. Correctly display the institutional identity of the **Indian Institute of Information Technology Raichur (IIIT Raichur)** and the three team members (**Omkar Kendre**, **Rahul Dewangan**, **Govind Das**).
+6. Are 100% verified against raw experiment files with zero data fabrication.
 
-**Audit Completed By:** Antigravity AI Academic Publication Assistant  
+**Audit Completed By:** Senior Academic AI Research Specialist  
 **Date:** November 17, 2026
