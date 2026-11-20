@@ -114,17 +114,34 @@ def subsample_coreset(features, percentage=0.10, seed=42):
 
     # Greedy K-Center clustering
     rng = np.random.RandomState(seed)
-    selected_indices = [rng.randint(n_samples)]
-    min_distances = np.linalg.norm(features_proj - features_proj[selected_indices[0]], axis=1)
+    first_idx = rng.randint(n_samples)
 
-    for step in range(1, n_coreset):
-        next_idx = int(np.argmax(min_distances))
-        selected_indices.append(next_idx)
-        new_dists = np.linalg.norm(features_proj - features_proj[next_idx], axis=1)
-        min_distances = np.minimum(min_distances, new_dists)
+    if torch.cuda.is_available():
+        device = torch.device("cuda")
+        feat_t = torch.from_numpy(features_proj).float().to(device)
+        selected_indices = [first_idx]
+        min_distances = torch.norm(feat_t - feat_t[first_idx], dim=1)
 
-        if (step + 1) % 1000 == 0 or (step + 1) == n_coreset:
-            logger.info("  Coreset progress: [%d/%d]", step + 1, n_coreset)
+        for step in range(1, n_coreset):
+            next_idx = int(torch.argmax(min_distances).item())
+            selected_indices.append(next_idx)
+            new_dists = torch.norm(feat_t - feat_t[next_idx], dim=1)
+            min_distances = torch.minimum(min_distances, new_dists)
+
+            if (step + 1) % 1000 == 0 or (step + 1) == n_coreset:
+                logger.info("  Coreset progress: [%d/%d]", step + 1, n_coreset)
+    else:
+        selected_indices = [first_idx]
+        min_distances = np.linalg.norm(features_proj - features_proj[first_idx], axis=1)
+
+        for step in range(1, n_coreset):
+            next_idx = int(np.argmax(min_distances))
+            selected_indices.append(next_idx)
+            new_dists = np.linalg.norm(features_proj - features_proj[next_idx], axis=1)
+            min_distances = np.minimum(min_distances, new_dists)
+
+            if (step + 1) % 1000 == 0 or (step + 1) == n_coreset:
+                logger.info("  Coreset progress: [%d/%d]", step + 1, n_coreset)
 
     return features[selected_indices]
 
